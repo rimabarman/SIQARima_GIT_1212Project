@@ -11,41 +11,78 @@ packages:
   version: 10.7.0.0.198
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: SIQARima_GIT_1212Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQARima_GIT_1212Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:RestAlias
   packages:
   - name: SIQARima_GIT_1212Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:RestConnAlias
   packages:
   - name: SIQARima_GIT_1212Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.integrations:SIQAAdapterFlow
   packages:
   - name: SIQARima_GIT_1212Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.integrations:Test_RestConnector
   packages:
   - name: SIQARima_GIT_1212Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:TestRest1
   packages:
   - name: SIQARima_GIT_1212Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
 configurationVariables:
@@ -53,66 +90,34 @@ configurationVariables:
   : "true"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth.consumerId
   : 3MVG9k02hQhyUgQCKlnwOVc1lTfY9AqPHmUIRA6I.ZqYzln.F3Vuok.Rk6d6F00IhbOJxstGzhIJDyuJGd0ft
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.authorizationHeaderInTokenRefresh
-  : "false"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.validateAfterInactivity
-  : "1000"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.sockBuffSize
-  : "8192"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.retryCount
   : "4"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.accessTokenRefreshURLRequest
-  : URL Query String
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.refreshAccessToken
-  : "true"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.validateAfterInactivity
   : "1000"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.expireTimeout
-  : "1000"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.scope
-  : offline_access api refresh_token
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.enableSNI
   : "true"
-  ? iscloudstreamsconnectorservice.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestRest1.connectionAlias
-  : project.siqarima_git_1212.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:RestAlias
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.blockTimeout
   : "1000"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.keepAliveInterval
   : "300000"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.refreshToken
   : "{AES}3xAVJ1NaykPu9FvMp6eUxV5yoFe6VANPNjUWc2wwPdN3pf9vuB2iXTu/rg9xO+5Zx9A87i/WQpDFDeo1mgADhYgirnio6KdAszm5UWVUB3OX8vz2y9FicF0ee225VYCt"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.reuseAddr
-  : "false"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.timeoutType
-  : auto
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.timeoutType
   : auto
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.poolable
-  : "true"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.refreshToken
   : "{AES}z0OyKRGMCuSrw5+VwAKX9/oM6BIKjPeYnDaBN96E5WE51ihADTbuVPxNgEzibj4QruD7dprkqIUz2A2UuAroPCo9lkD9cn9+IyICeILx3/1l3xiIkjokSOR4joVg6CJF"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.maximumPoolSize
-  : "10"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.accessTokenRefreshURL
   : https://login.salesforce.com/services/oauth2/token
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.authorizationHeaderPrefix
-  : Bearer
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.retryIfRequestSentOk
   : "true"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.connectTimeout
-  : "30000"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.tcpNoDelay
-  : "false"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.hostnameVerifier
-  : org.apache.http.conn.ssl.DefaultHostnameVerifier
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.readTimeout
   : "30000"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.authorizationHeaderPrefix
   : Bearer
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth.consumerId
   : 3MVG9wt4IL4O5wvIADNKl03CbBmCQKcAkAbkFDcpaTXkyVfv7X1O4s2cklJGvkgxFTHWN6GBLsMx_IKubmOL5
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.socketStaleCheck
-  : "true"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.startupBackoffSecs
   : "10"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.poolIncrementSize
@@ -121,26 +126,12 @@ configurationVariables:
   : "{AES}S+OJUXnsSzS9FVwg4EcXw7U8RmLyuumGImNomFWBgk6T+vxQhwC5PcfjMx2ftZolrF7AUhqV0EP3EGbU847nWGmK1wuN3U1rA1B0VhuZoUw="
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.authorizationServerUrl
   : https://login.salesforce.com/services/oauth2/authorize
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.reuseAddr
-  : "false"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.idleTimeout
   : "-1"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.authenticationServerUrl
-  : https://login.salesforce.com/services/oauth2/token
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.connectTimeout
-  : "30000"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cx.grant_type
   : refresh_token
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.startupBackoffSecs
-  : "10"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.accessTokenRefreshURLRequest
-  : URL Query String
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.authorizationHeaderInTokenRefresh
   : "false"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.minimumPoolSize
-  : "1"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.poolIncrementSize
-  : "1"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.socketLinger
   : "-1"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.expireTimeout
@@ -149,63 +140,155 @@ configurationVariables:
   : https://login.salesforce.com/services/oauth2/token
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.hostnameVerifier
   : org.apache.http.conn.ssl.DefaultHostnameVerifier
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.refreshAccessToken
-  : "true"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : siqatest
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth.accessToken
   : "{AES}2jLybUnV6FemugOpebt+duDZ4MCTUefN0BdSEx9BBJxq0STcUcjZDjutnlXOdyCJd1C8rMfifppiKSf1BEn2FcvY/025c+0PXsVZfl5ILKqDdo3nAKJE83yE+sODJmDX7Bef7Re7IzhBC42hZbNLHWmK1wuN3U1rA1B0VhuZoUw="
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.retryIfRequestSentOk
   : "true"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.connectionEnabled
-  : "true"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.keepAliveInterval
-  : "300000"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.startupRetryCount
-  : "0"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.socketLinger
-  : "-1"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth.consumerSecret
   : "{AES}ePv9vDKXdd6A2HDsPDBAO8y1Fe9R7m6Dya5xSCLlAK353vKmgg/uiZT0YAoUU42Eojf9A5EvRE+pSL3aLrpBNWmK1wuN3U1rA1B0VhuZoUw="
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.minimumPoolSize
   : "1"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.retryCount
-  : "4"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.tcpNoDelay
-  : "false"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.startupRetryCount
   : "0"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.retryCount
+  : "4"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.scope
   : offline_access api refresh_token
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.sockBuffSize
-  : "8192"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.enableCompression
-  : "false"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.providerUrl
-  : https://softwareag7-dev-ed.my.salesforce.com
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : TestDriver
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.enableCompression
   : "false"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.maximumPoolSize
   : "10"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.idleTimeout
   : "-1"
-  ? iscloudstreamsconnectorservice.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestRest1.virtualServiceName
-  : WmCloudStreams.RestVS
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.blockTimeout
   : "1000"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.enableSNI
-  : "true"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cx.grant_type
   : refresh_token
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.authorizationServerUrl
   : https://login.salesforce.com/services/oauth2/authorize
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.readTimeout
-  : "30000"
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth.accessToken
-  : "{AES}h1r1CmTvU65r25EqPgWKVdizBZ1CQSjcnxIwmduOKo84luvevzuTQFaXif2zcqBmfIr4g5Yh4LPBWI+k0UTTxNVGuBdE2HBvfKd5xVcNypLO0lcQZbC6G8Ndg3HfbLrNPdw1mGt+t2tyCT3WsO7fD2mK1wuN3U1rA1B0VhuZoUw="
-  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.socketStaleCheck
-  : "true"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.connectionEnabled
   : "true"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.providerUrl
   : https://sag53-dev-ed.develop.my.salesforce.com
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.authenticationServerUrl
   : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.refreshAccessToken
+  : "true"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.scope
+  : offline_access api refresh_token
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? iscloudstreamsconnectorservice.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestRest1.connectionAlias
+  : project.siqarima_git_1212.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:RestAlias
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.timeoutType
+  : auto
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.poolable
+  : "true"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.authorizationHeaderPrefix
+  : Bearer
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.socketStaleCheck
+  : "true"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.poolIncrementSize
+  : "1"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth_v20.refreshAccessToken
+  : "true"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.startupRetryCount
+  : "0"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.socketLinger
+  : "-1"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.providerUrl
+  : https://softwareag7-dev-ed.my.salesforce.com
+  ? iscloudstreamsconnectorservice.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestRest1.virtualServiceName
+  : WmCloudStreams.RestVS
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth.accessToken
+  : "{AES}h1r1CmTvU65r25EqPgWKVdizBZ1CQSjcnxIwmduOKo84luvevzuTQFaXif2zcqBmfIr4g5Yh4LPBWI+k0UTTxNVGuBdE2HBvfKd5xVcNypLO0lcQZbC6G8Ndg3HfbLrNPdw1mGt+t2tyCT3WsO7fD2mK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.cn.socketStaleCheck
+  : "true"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
