@@ -8,9 +8,16 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: WmSalesforceRESTProvider
+  version: 10.7.0.0.198
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 services:
+- serviceName: project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SIQARima_GIT_1212Project
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:RestAlias
   packages:
   - name: SIQARima_GIT_1212Project
@@ -18,6 +25,12 @@ services:
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:RestConnAlias
+  packages:
+  - name: SIQARima_GIT_1212Project
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.198
+- serviceName: project.siqarima_git_1212.integrations:SIQAAdapterFlow
   packages:
   - name: SIQARima_GIT_1212Project
     version: "1.0"
