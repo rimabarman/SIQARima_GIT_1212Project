@@ -66,6 +66,26 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.198
+- serviceName: project.siqarima_git_1212.integrations:Call_refData
+  packages:
+  - name: SIQARima_GIT_1212Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.198
+- serviceName: project.siqarima_git_1212.referencedata:refData
+  packages:
+  - name: SIQARima_GIT_1212Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.198
 - serviceName: project.siqarima_git_1212.integrations:SIQAAdapterFlow
   packages:
   - name: SIQARima_GIT_1212Project
