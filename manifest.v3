@@ -12,17 +12,18 @@
     <value name="WmSalesforceRESTProvider">10.7.0.0.198</value>
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
     <value name="SIQAJDBCAdapterTests">1.0</value>
+    <value name="DADA_GlobalVariable1">1.0</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">22</value>
+  <value name="build">23</value>
   <null name="description"/>
   <value name="created_date">12-12-2025 11:11:15 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-12-12T12:03:41.322606214Z</value>
+  <value name="lastUpdated">2025-12-12T12:03:59.434434076Z</value>
   <value name="wmProjectId">flea22253ef20608ecbf353d</value>
   <value name="creator">Rima Barman</value>
 </Values>
