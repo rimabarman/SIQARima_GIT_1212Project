@@ -25,6 +25,11 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: SIQACloudStreamsTests
+  gitServerName: SIQAGitHub
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
 services:
 - serviceName: project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
@@ -147,10 +152,10 @@ configurationVariables:
   : "true"
   ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
-  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
-  : "0"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.validateAfterInactivity
   : "1000"
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.blockingTimeout
@@ -179,10 +184,10 @@ configurationVariables:
   : auto
   ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.expireTimeout
   : "1000"
-  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
-  : "0"
   ? cloudstreamsconnection.project..siqarima_git_1212..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:RestAlias.timeoutType
   : auto
+  ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
   : ""
   ? artConnection.SIQARima_GIT_1212Project.project.siqarima_git_1212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
