@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: SIQARima_GIT_1212Project
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/rimabarman
+  gitUsername: rimabarman
+  gitBranch: main
